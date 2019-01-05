@@ -1,0 +1,201 @@
+@import "./component/style.scss";
+@import "./component/header.scss";
+@import "./component/footer.scss";
+//轮播图
+.carousel{
+    width: 100%;
+    height: 410px;
+    background: yellow;
+    margin-top:15px;
+}
+
+//优选品牌
+.good{
+    margin-top: 120px;
+    width: 1095px;
+    height: 420px;
+    margin: 0 auto;
+    .good-title p{
+        font-size: 14px;
+        width: 300px;
+        height: 32px;
+        text-align: center;
+        line-height: 32px;
+        border: 1px solid black;
+        margin: 0 auto;
+        }
+    .good-banner{
+        margin-top: 20px;
+        width: 905px;
+        height: 326px;
+        border: 1px solid red;
+    }
+    .good-spot{
+        width: 1095px;
+        height: 40px;
+        a{
+            display: inline-block;
+            width: 39px;
+            height:11px;
+            background: url(/static/img/spot.png) no-repeat center;
+            float: right;
+            margin-top: 18px;
+        }
+    }
+}
+ 
+
+//人气单品
+.hot{
+    width: 1095px;
+    height: 1603px;
+    margin: 0 auto;
+    margin-top: 98px;
+    border: 1px solid red;
+    .hot-title p{
+        font-size: 14px;
+        width: 300px;
+        height: 32px;
+        text-align: center;
+        line-height: 32px;
+        border: 1px solid black;
+        margin: 0 auto;
+    }
+    // 商品列表
+    .hot-banner{
+        margin-top: 15px;
+        width: 945px;
+        margin-left: 30px;
+        height: 1490px;
+        border: 1px solid red;
+    }
+    .hot-spot{
+        width: 1095px;
+        height: 57px;
+        a{
+            display: inline-block;
+            width: 39px;
+            height:11px;
+            background: url(/static/img/spot.png) no-repeat center;
+            float: right;
+            margin-top: 45px;
+        }
+    }
+}
+
+
+// 潮流女装
+.fashionW{
+    width: 1095px;
+    height: 1593px;
+    margin: 0 auto;
+    margin-top: 98px;
+    border: 1px solid red;
+    .fashionW-title{
+        font-size: 14px;
+        width: 300px;
+        height: 32px;
+        text-align: center;
+        line-height: 32px;
+        border: 1px solid black;
+        margin: 0 auto;
+    }
+    // 商品列表
+    .fashionW-banner{
+        margin-top: 15px;
+        width: 945px;
+        margin-left: 30px;
+        height: 1490px;
+        border: 1px solid red;
+    }
+    .fashionW-spot{
+        width: 1095px;
+        height: 57px;
+        a{
+            display: inline-block;
+            width: 39px;
+            height:11px;
+            background: url(/static/img/spot.png) no-repeat center;
+            float: right;
+            margin-top: 45px;
+        }
+    }
+}
+
+
+//精品男装
+.man{
+    width: 1095px;
+    height: 1593px;
+    margin: 0 auto;
+    margin-top: 98px;
+    border: 1px solid red;
+    .man-title{
+        font-size: 14px;
+        width: 300px;
+        height: 32px;
+        text-align: center;
+        line-height: 32px;
+        border: 1px solid black;
+        margin: 0 auto;
+    }
+    // 商品列表
+    .man-banner{
+        margin-top: 15px;
+        width: 945px;
+        margin-left: 30px;
+        height: 1490px;
+        border: 1px solid red;
+    }
+    .man-spot{
+        width: 1095px;
+        height: 57px;
+        a{
+            display: inline-block;
+            width: 39px;
+            height:11px;
+            background: url(/static/img/spot.png) no-repeat center;
+            float: right;
+            margin-top: 45px;
+        }
+    }
+}
+
+
+//惊喜折扣
+.surprise{
+    width: 1095px;
+    height: 1594px;
+    margin: 0 auto;
+    margin-top: 98px;
+    border: 1px solid red;
+    .surprise-title{
+        font-size: 14px;
+        width: 300px;
+        height: 32px;
+        text-align: center;
+        line-height: 32px;
+        border: 1px solid black;
+        margin: 0 auto;
+    }
+    // 商品列表
+    .surprise-banner{
+        margin-top: 15px;
+        width: 945px;
+        margin-left: 30px;
+        height: 1489px;
+        border: 1px solid red;
+    }
+    .surprise-spot{
+        width: 1095px;
+        height: 57px;
+        a{
+            display: inline-block;
+            width: 39px;
+            height:11px;
+            background: url(/static/img/spot.png) no-repeat center;
+            float: right;
+            margin-top: 45px;
+        }
+    }
+}

@@ -1,0 +1,133 @@
+
+$font-size:12px;
+header{
+    width: 100%;
+    height: 188px;
+    background: black;
+}
+.header-top{
+    width: 1095px;
+    height: 120px;
+    margin: 0 auto;
+    overflow: hidden;
+    .header-logo a{
+        display: block;
+        margin-top: 19px;
+        margin-left: 33px;
+        float: left;
+        width: 255px;
+        height: 64px;
+        background: url(/static/img/zhayanlogo-new.png);
+    }
+    .header-form{
+        width: 305px;
+        height: 76px;
+        float: left;
+        margin-left: 170px;
+        margin-top: 28px;
+        .header-form-title{
+            width: 305px;
+            height: 25px;
+            .header-s{
+                float: left;
+                width: 60px;
+                height: 25px;
+                text-align: center;
+                line-height: 25px;
+                font-size: $font-size;
+                color: white;
+            }
+        }
+        .header-form-inner{
+            width: 305px;
+            height: 50px;
+            .search{
+               width: 305px;
+               height: 30px;
+               border: 2px solid white;  
+               input:nth-child(1){
+                   width: 238px;
+                   height: 26px;
+                   border: none;
+                   color: #757575;
+                   font-size: $font-size;
+                   padding-left: 10px;
+                   float: left;
+                   background: black;
+               }
+               input:nth-child(2){
+                width: 63px;
+                height: 26px;
+                border: none;
+                background: white;
+                float: left;
+                font-size: $font-size;
+               }
+            }
+            p{
+                font-size: $font-size;
+                a{
+                    color: white;
+                }
+            }
+        }
+
+    }
+}
+.header-scroll{
+    width: 1095px;
+    height: 68px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: black;
+    .scroll-left{
+        width: 656px;
+        height: 55px;
+        float: left;
+        margin-top: 13px;
+        .classify{
+            width: 160px;
+            height: 55px;
+            background: white;
+            line-height: 55px;
+            color:#757575;
+            text-align: center;
+            float: left;
+        }
+        nav ul{
+            height: 55px;
+            margin-left: 15px;
+            float: left;
+            width: 479px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            li{ 
+                height: 55px;
+                line-height: 55px
+            }
+            .now{
+                background: url(/static/img/nav-arr.png) no-repeat center 38px;
+            }
+            
+        }
+    }
+    .scroll-right{
+        width: 136px;
+        height: 55px;
+        float: right; 
+        margin-top: 13px;
+        p{  
+            width: 136px;
+            height: 55px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            a{
+                color: white;
+            }
+        }
+    }
+}
