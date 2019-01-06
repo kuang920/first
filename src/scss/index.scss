@@ -199,3 +199,31 @@
         }
     }
 }
+
+
+// section 眨眼网——全球设计师原创服装平台
+section{
+    width: 1095px;
+    height: 200px;
+    margin: 0 auto;
+    .box{
+        width: 1050px;
+        height: 151px;
+         margin-left: 28px; 
+        background: url(/static/img/border.png) no-repeat;
+        background-size: 1050px 150px;
+        h6{
+            font-size: 20px;
+            text-align: center;
+        }
+        p{
+            text-indent: 2em;
+            font-size: 20px;
+            line-height: 36px;
+            width: 980px;
+            margin: 0 auto;
+            color: #444444;
+        }
+    }
+    
+}
