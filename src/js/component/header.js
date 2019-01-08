@@ -3,6 +3,7 @@ define(["jquery"],()=>{
     class Header{
         constructor(){
             this.init();
+            
         }
         
         init(){
@@ -12,8 +13,20 @@ define(["jquery"],()=>{
                     resolve();
         		})
         	}).then(()=>{
-        		
+                 this.scroll(this);
         	})
+        }
+        //屏幕滚动到613px时  header-scroll样式变为feixd
+        scroll(){
+            $(window).on("scroll",function(){
+                var scrollTop = $(window).scrollTop();
+                if(scrollTop > 613){
+                    $("#header-scroll").css({"position": "fixed","top":"0"});    
+                }
+                if(scrollTop < 613){
+                    $("#header-scroll").css({"position": "relative"});
+                }
+            })
         }
     }
     return new Header();

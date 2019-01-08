@@ -4,9 +4,30 @@
 //轮播图
 .carousel{
     width: 100%;
-    height: 410px;
-    background: yellow;
+    height: 409px;
     margin-top:15px;
+    position: relative;
+    overflow: hidden;
+    ul{
+        width: 9730px;
+        height: 409px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        li{
+            height: 409px;
+            float: left; 
+        }
+        a{
+            display: inline-block;
+            width: 100%;
+            height: 409px;
+            img{
+               vertical-align: top;
+               }
+        }
+    }
+    
 }
 
 //优选品牌

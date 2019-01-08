@@ -2,4 +2,147 @@
 @import "./component/style.scss";
 @import "./component/footer.scss";
 
-h1{background: yellow;}
+.reg-main{
+    width: 100%;
+    height: 605px;
+    background: url(/static/img/reg_bg.jpg) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form{
+        width: 420px;
+        height: 538px; 
+        border-radius: 5px;
+        background: white;
+        .box{
+            width: 370px;
+            height: 538px;
+            margin-left: 24px;
+            .reg-title{
+                height: 55px;
+                background: url(/static/img/img_account.png) no-repeat;
+                margin-top: 15px;
+            }
+            .reg-way{
+                height: 16px; 
+            }
+
+            // 手机号  验证码
+            .account-input{
+                width: 370px;
+                height: 40px;
+                border: none;
+                border: 1px solid #dddddd;
+                margin: 10px 0;
+                position: relative;
+                .phn{
+                    display: inline-block;
+                    width: 17px;
+                    height: 38px;
+                    margin-left: 10px;
+                    background: url(/static/img/icon.png) no-repeat;
+                    background-position: 0 -800px;
+                    float: left;
+                }
+                .phn-input{
+                    width: 337px;
+                    height: 38px;
+                    float: left;
+                    border: none;
+                    padding-left: 10px;
+                    color: #dddddd;
+                }
+                .green{
+                    width: 103px;
+                    height: 35px;
+                    background: #3a9b6b;
+                    position: absolute;
+                    right: 3px;
+                    top: 1px;
+                    border-radius: 5px;
+                    color: white;
+                    text-align: center;line-height: 35px;
+                }
+            }
+
+            // 密码
+            .psw{
+                width: 370px;
+                height: 40px;
+                border: none;
+                border: 1px solid #dddddd;
+                margin: 10px 0;
+                .psw-img{
+                    display: inline-block;
+                    width: 17px;
+                    height: 38px;
+                    margin-left: 10px;
+                    background: url(/static/img/icon.png) no-repeat;
+                    background-position: 0 -832px;
+                    float: left;
+                }
+                .psw-input{
+                    width: 337px;
+                    height: 38px;
+                    float: left;
+                    border: none;
+                    padding-left: 10px;
+                    color: #dddddd;
+                } 
+
+                
+            }
+            // 注册按钮
+            .input-sub{
+                width: 370px;
+                height: 40px;
+                background: #04b4ae;
+                border: none;
+                color: white;
+                font-weight: bold;
+                font-size: 14px;
+                letter-spacing: 1em;
+            }
+
+            .reg-login{
+                width: 370px;
+                height: 28px;
+                text-align: right;
+                line-height: 28px;
+                color: #999999;
+                a{color: #444444;}
+            }
+
+          //第三方登录
+          .quick-login{
+            width: 370px;
+            height: 20px;
+            margin-top: 48px;
+            .float-right{
+                float: right;
+                width: 92px;
+                height: 20px;
+                a{
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 5px;
+                    &:nth-child(1){
+                        background: url(/static/img/login_app.png) no-repeat;
+                        background-position: 0 -152px;
+                    }
+                    &:nth-child(2){
+                        background: url(/static/img/login_app.png) no-repeat;
+                        background-position: 0 -129px;
+                    }
+                    &:nth-child(3){
+                        background: url(/static/img/login_app.png) no-repeat;
+                        background-position: 0 -176px;
+                    }
+                }
+            }
+           
+            }  
+        }
+    }
+}

@@ -1,0 +1,128 @@
+@import "./component/footer.scss";
+@import "./component/header.scss";
+@import "./component/style.scss";
+.log-main{
+    width: 100%;
+    height: 591px;
+    background: url(/static/img/reg_bg.jpg) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    form{
+        width: 420px;
+        height: 388px; 
+        border-radius: 5px;
+        background: white;
+        .box{
+            width: 370px;
+            height: 388px; 
+            margin-left: 24px;
+            .log-title{
+                height: 55px;
+                background: url(/static/img/img_account.png) no-repeat;
+                background-position: 0 -64px;
+                margin-top: 15px;
+            }
+
+        
+             // 手机号  密码
+            .user{
+                width: 370px;
+                height: 90px; 
+                .account-input{
+                    width: 370px;
+                    height: 40px;
+                    border: none;
+                    border: 1px solid #dddddd;
+                    margin: 10px 0;
+                    .user-img1{
+                        display: inline-block;
+                        width: 17px;
+                        height: 38px;
+                        margin-left: 10px;
+                        float: left;
+                        background: url(/static/img/icon.png) no-repeat;
+                        background-position: 0 -801px;
+                        
+                    }
+                    .user-img2{
+                        display: inline-block;
+                        width: 17px;
+                        height: 38px;
+                        margin-left: 10px;
+                        float: left;
+                        background: url(/static/img/icon.png) no-repeat;
+                        background-position: 0 -831px;
+                        
+                    }
+                    .user_input{
+                                width: 337px;
+                                height: 38px;
+                                float: left;
+                                border: none;
+                                padding-left: 10px;
+                                color: #dddddd;
+                            }
+            }
+             
+         }
+
+         
+        }
+        p{
+            width: 370px;
+            margin-top: 17px;
+            text-align: right;
+            margin-bottom: 16px;
+            a{color: #444444}
+        }
+        // 注册按钮
+        .input-sub{
+            width: 370px;
+            height: 40px;
+            background: #04b4ae;
+            border: none;
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+            letter-spacing: 1em;
+        }
+        .log-reg{
+            width: 370px;
+            height: 28px;
+            text-align: right;
+            line-height: 28px;
+            color: #999999;
+            a{color: #444444;}
+        }
+         //第三方登录
+          .quick-login{
+            width: 370px;
+            height: 20px;
+            margin-top: 48px;
+            .float-right{
+                float: right;
+                width: 92px;
+                height: 20px;
+                a{
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 5px;
+                    &:nth-child(1){
+                        background: url(/static/img/login_app.png) no-repeat;
+                        background-position: 0 -152px;
+                    }
+                    &:nth-child(2){
+                        background: url(/static/img/login_app.png) no-repeat;
+                        background-position: 0 -129px;
+                    }
+                    &:nth-child(3){
+                        background: url(/static/img/login_app.png) no-repeat;
+                        background-position: 0 -176px;
+                    }
+                }
+            }
+        }
+    }
+}
