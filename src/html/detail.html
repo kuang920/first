@@ -1,1 +1,200 @@
-<h1>detail</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/detail.css">
+    <script src="/libs/require/require.js" data-main="/js/detail.js"></script>
+    <!-- <script src="/libs/jqery/jqueryfdj/src/jquery.exzoom.js"></script> -->
+</head>
+<body>
+    <header></header>
+    <div id="detail-box" class="detail-box">
+        <div class="detail_title">
+            <a href="javascript:;">场景</a>>
+            <a href="javascript:;">约会</a>>
+            <a href="">CREPE>crepe自制 欧美百搭人鱼姬色闪亮半截裙</a>
+        </div>
+        <script type="text/html" id="detail-template">
+            {{each detail item i}}
+                <div class="detail_inner">
+                    <div class="inner-left" id="inner-left">
+                            <ul>
+                                <li><img src="{{item.img}}" id="detailIag"></li>
+                                <li><img src="{{item.img}}"></li>
+                                <li><img src="{{item.img}}"></li>
+                                <li><img src="{{item.img}}"></li>
+                                <li><img src="{{item.img}}"></li>
+                            </ul>
+                            <div class="big_img"><img src="{{item.img}}"></div>
+                    </div>
+                    <!-- 购物操作 -->
+                    <div class="inner_right" id="inner_right">
+                        <p class="right_title">油果日记 <a href="javascript:;">>私信设计师</a></p>
+                        <p class="stitle">{{item.stitle}}</p>
+                        <p class="price">￥<span id="detailPrice">{{item.price}}</span><span>原价{{item.sprice}}</span><span>E&nbsp;{{item.e_blue}}</span></p>
+                        <div class="detailColor">颜色<span class="color">红色</span><span class="color">蓝色</span></div>
+                        <div class="detailSize">尺码<span class="size">S</span><span class="size">M</span><span class="size">L</span></div>
+                        <div class="detailMany"><strong>数量</strong><span class="reduce"></span><span>1</span><span class="add"></span><i>(库存<b>{{item.have}}</b>件)</i></div>
+                        
+                        <div class="detailBtn">
+                            <button>立即购买</button>
+                            <button id="detailAddCart">加入购物车</button>
+                            <button>加入收藏</button>
+                        </div>
+                    </div>
+
+                    <!-- nav -->
+                    <div class="detail_dtl">
+                        <ul class="detail_nav">
+                            <li class="ac">购买须知</li>
+                            <li>设计师寄语</li>
+                            <li>商品图片</li>
+                            <li>同款推荐</li>
+                            <li>同店推荐</li>
+                            <li></li>
+                        </ul>
+                        <div class="dtl_dtl">
+                            <div class="dtl1">
+                                <p>◊&nbsp;购买须知&nbsp;&nbsp;<i>SIZE</i></p>
+                                <p>【商品材质】：&nbsp;&nbsp;涤纶</p>
+                                <p>【邮&nbsp;&nbsp;&nbsp;&nbsp;费】：快递费用 ¥6.00  EMS费用 ¥25.00  </p>
+                                <p>【须&nbsp;&nbsp;&nbsp;&nbsp;知】：</p>
+                                <p>【编&nbsp;&nbsp;&nbsp;&nbsp;语】：自觉原创 简约时尚竖条纹萝卜裤女洋气长裤时髦D型环系带显瘦</p>
+                                <p>◊&nbsp;设计师寄语&nbsp;&nbsp;<i>MESSAGE</i></p>
+                                <p>
+                                    自觉原创 简约时尚竖条纹萝卜裤女洋气长裤时髦D型环系带显瘦出自于原创服装设计师品牌自觉设计。设计师介绍：王媛媛。独立设计师，自觉ZIJUE服饰创始
+                                    人、设计总监，北京服装学院在职讲师，教授《服装品牌策划与产品开发》、《女装设计》、《男装设计》、《服装信息整合》、《服装设计原理》、《服装学
+                                    概论》、《时装画技法》、《服装效果图》等设计相关类课程。中国流行色协会特约撰稿人。 品牌简介： 自觉服饰以服饰为媒介，表达自然、平衡、慢生活
+                                    的生活哲学，致力于为当代女性展示一种现代、智慧的生活方式；知性而向往心灵自由，独立并热爱生活，对艺术文学思潮保持开放的胸襟，从容的面对自己、面对
+                                    世界，懂得享受生活带给她的一切并游刃自如。 自觉希望成就的不仅仅是美丽的衣衫，更希望以一种纯朴、沉静的态度，去影响日常的繁杂，为生活带来一些智
+                                    慧纯真的意境与感悟。
+                                </p>
+                                <p>◊&nbsp;商品图片 </p>
+                                <img src="{{item.img}}">
+                                <img src="{{item.img}}">
+                                <img src="{{item.img}}">
+                                <img src="{{item.img}}">
+                            </div>
+                            <!-- <div class="dtl2">
+                                    <p>◊&nbsp;购买须知&nbsp;&nbsp;<i>SIZE</i></p>
+                                    <p>【商品材质】：&nbsp;&nbsp;涤纶</p>
+                                    <p>【邮&nbsp;&nbsp;&nbsp;&nbsp;费】：快递费用 ¥6.00  EMS费用 ¥25.00  </p>
+                                    <p>【须&nbsp;&nbsp;&nbsp;&nbsp;知】：</p>
+                                    <p>【编&nbsp;&nbsp;&nbsp;&nbsp;语】：自觉原创 简约时尚竖条纹萝卜裤女洋气长裤时髦D型环系带显瘦</p>
+                                    <p>◊&nbsp;设计师寄语&nbsp;&nbsp;<i>MESSAGE</i></p>
+                                    <p>
+                                        自觉原创 简约时尚竖条纹萝卜裤女洋气长裤时髦D型环系带显瘦出自于原创服装设计师品牌自觉设计。设计师介绍：王媛媛。独立设计师，自觉ZIJUE服饰创始
+                                        人、设计总监，北京服装学院在职讲师，教授《服装品牌策划与产品开发》、《女装设计》、《男装设计》、《服装信息整合》、《服装设计原理》、《服装学
+                                        概论》、《时装画技法》、《服装效果图》等设计相关类课程。中国流行色协会特约撰稿人。 品牌简介： 自觉服饰以服饰为媒介，表达自然、平衡、慢生活
+                                        的生活哲学，致力于为当代女性展示一种现代、智慧的生活方式；知性而向往心灵自由，独立并热爱生活，对艺术文学思潮保持开放的胸襟，从容的面对自己、面对
+                                        世界，懂得享受生活带给她的一切并游刃自如。 自觉希望成就的不仅仅是美丽的衣衫，更希望以一种纯朴、沉静的态度，去影响日常的繁杂，为生活带来一些智
+                                        慧纯真的意境与感悟。
+                                    </p>
+                                    <p>◊&nbsp;商品图片 </p>
+                                    <img src="{{item.img}}">
+                                </div>
+                                <div class="dtl3">
+                                    <p>◊&nbsp;购买须知&nbsp;&nbsp;<i>SIZE</i></p>
+                                    <p>【商品材质】：&nbsp;&nbsp;涤纶</p>
+                                    <p>【邮&nbsp;&nbsp;&nbsp;&nbsp;费】：快递费用 ¥6.00  EMS费用 ¥25.00  </p>
+                                    <p>【须&nbsp;&nbsp;&nbsp;&nbsp;知】：</p>
+                                    <p>【编&nbsp;&nbsp;&nbsp;&nbsp;语】：自觉原创 简约时尚竖条纹萝卜裤女洋气长裤时髦D型环系带显瘦</p>
+                                    <p>◊&nbsp;设计师寄语&nbsp;&nbsp;<i>MESSAGE</i></p>
+                                    <p>
+                                        自觉原创 简约时尚竖条纹萝卜裤女洋气长裤时髦D型环系带显瘦出自于原创服装设计师品牌自觉设计。设计师介绍：王媛媛。独立设计师，自觉ZIJUE服饰创始
+                                        人、设计总监，北京服装学院在职讲师，教授《服装品牌策划与产品开发》、《女装设计》、《男装设计》、《服装信息整合》、《服装设计原理》、《服装学
+                                        概论》、《时装画技法》、《服装效果图》等设计相关类课程。中国流行色协会特约撰稿人。 品牌简介： 自觉服饰以服饰为媒介，表达自然、平衡、慢生活
+                                        的生活哲学，致力于为当代女性展示一种现代、智慧的生活方式；知性而向往心灵自由，独立并热爱生活，对艺术文学思潮保持开放的胸襟，从容的面对自己、面对
+                                        世界，懂得享受生活带给她的一切并游刃自如。 自觉希望成就的不仅仅是美丽的衣衫，更希望以一种纯朴、沉静的态度，去影响日常的繁杂，为生活带来一些智
+                                        慧纯真的意境与感悟。
+                                    </p>
+                                    <p>◊&nbsp;商品图片 </p>
+                                    <img src="{{item.img}}">
+                                </div>
+                                <div class="dtl4">
+                                    <p>◊&nbsp;购买须知&nbsp;&nbsp;<i>SIZE</i></p>
+                                    <p>【商品材质】：&nbsp;&nbsp;涤纶</p>
+                                    <p>【邮&nbsp;&nbsp;&nbsp;&nbsp;费】：快递费用 ¥6.00  EMS费用 ¥25.00  </p>
+                                    <p>【须&nbsp;&nbsp;&nbsp;&nbsp;知】：</p>
+                                    <p>【编&nbsp;&nbsp;&nbsp;&nbsp;语】：自觉原创 简约时尚竖条纹萝卜裤女洋气长裤时髦D型环系带显瘦</p>
+                                    <p>◊&nbsp;设计师寄语&nbsp;&nbsp;<i>MESSAGE</i></p>
+                                    <p>
+                                        自觉原创 简约时尚竖条纹萝卜裤女洋气长裤时髦D型环系带显瘦出自于原创服装设计师品牌自觉设计。设计师介绍：王媛媛。独立设计师，自觉ZIJUE服饰创始
+                                        人、设计总监，北京服装学院在职讲师，教授《服装品牌策划与产品开发》、《女装设计》、《男装设计》、《服装信息整合》、《服装设计原理》、《服装学
+                                        概论》、《时装画技法》、《服装效果图》等设计相关类课程。中国流行色协会特约撰稿人。 品牌简介： 自觉服饰以服饰为媒介，表达自然、平衡、慢生活
+                                        的生活哲学，致力于为当代女性展示一种现代、智慧的生活方式；知性而向往心灵自由，独立并热爱生活，对艺术文学思潮保持开放的胸襟，从容的面对自己、面对
+                                        世界，懂得享受生活带给她的一切并游刃自如。 自觉希望成就的不仅仅是美丽的衣衫，更希望以一种纯朴、沉静的态度，去影响日常的繁杂，为生活带来一些智
+                                        慧纯真的意境与感悟。
+                                    </p>
+                                    <p>◊&nbsp;商品图片 </p>
+                                    <img src="{{item.img}}">
+                                </div>
+                                <div class="dtl5">
+                                    <p>◊&nbsp;购买须知&nbsp;&nbsp;<i>SIZE</i></p>
+                                    <p>【商品材质】：&nbsp;&nbsp;涤纶</p>
+                                    <p>【邮&nbsp;&nbsp;&nbsp;&nbsp;费】：快递费用 ¥6.00  EMS费用 ¥25.00  </p>
+                                    <p>【须&nbsp;&nbsp;&nbsp;&nbsp;知】：</p>
+                                    <p>【编&nbsp;&nbsp;&nbsp;&nbsp;语】：自觉原创 简约时尚竖条纹萝卜裤女洋气长裤时髦D型环系带显瘦</p>
+                                    <p>◊&nbsp;设计师寄语&nbsp;&nbsp;<i>MESSAGE</i></p>
+                                    <p>
+                                        自觉原创 简约时尚竖条纹萝卜裤女洋气长裤时髦D型环系带显瘦出自于原创服装设计师品牌自觉设计。设计师介绍：王媛媛。独立设计师，自觉ZIJUE服饰创始
+                                        人、设计总监，北京服装学院在职讲师，教授《服装品牌策划与产品开发》、《女装设计》、《男装设计》、《服装信息整合》、《服装设计原理》、《服装学
+                                        概论》、《时装画技法》、《服装效果图》等设计相关类课程。中国流行色协会特约撰稿人。 品牌简介： 自觉服饰以服饰为媒介，表达自然、平衡、慢生活
+                                        的生活哲学，致力于为当代女性展示一种现代、智慧的生活方式；知性而向往心灵自由，独立并热爱生活，对艺术文学思潮保持开放的胸襟，从容的面对自己、面对
+                                        世界，懂得享受生活带给她的一切并游刃自如。 自觉希望成就的不仅仅是美丽的衣衫，更希望以一种纯朴、沉静的态度，去影响日常的繁杂，为生活带来一些智
+                                        慧纯真的意境与感悟。
+                                    </p>
+                                    <p>◊&nbsp;商品图片 </p>
+                                    <img src="{{item.img}}">
+                                </div>
+                                <div class="dtl6">
+                                    <p>◊&nbsp;购买须知&nbsp;&nbsp;<i>SIZE</i></p>
+                                    <p>【商品材质】：&nbsp;&nbsp;涤纶</p>
+                                    <p>【邮&nbsp;&nbsp;&nbsp;&nbsp;费】：快递费用 ¥6.00  EMS费用 ¥25.00  </p>
+                                    <p>【须&nbsp;&nbsp;&nbsp;&nbsp;知】：</p>
+                                    <p>【编&nbsp;&nbsp;&nbsp;&nbsp;语】：自觉原创 简约时尚竖条纹萝卜裤女洋气长裤时髦D型环系带显瘦</p>
+                                    <p>◊&nbsp;设计师寄语&nbsp;&nbsp;<i>MESSAGE</i></p>
+                                    <p>
+                                        自觉原创 简约时尚竖条纹萝卜裤女洋气长裤时髦D型环系带显瘦出自于原创服装设计师品牌自觉设计。设计师介绍：王媛媛。独立设计师，自觉ZIJUE服饰创始
+                                        人、设计总监，北京服装学院在职讲师，教授《服装品牌策划与产品开发》、《女装设计》、《男装设计》、《服装信息整合》、《服装设计原理》、《服装学
+                                        概论》、《时装画技法》、《服装效果图》等设计相关类课程。中国流行色协会特约撰稿人。 品牌简介： 自觉服饰以服饰为媒介，表达自然、平衡、慢生活
+                                        的生活哲学，致力于为当代女性展示一种现代、智慧的生活方式；知性而向往心灵自由，独立并热爱生活，对艺术文学思潮保持开放的胸襟，从容的面对自己、面对
+                                        世界，懂得享受生活带给她的一切并游刃自如。 自觉希望成就的不仅仅是美丽的衣衫，更希望以一种纯朴、沉静的态度，去影响日常的繁杂，为生活带来一些智
+                                        慧纯真的意境与感悟。
+                                    </p>
+                                    <p>◊&nbsp;商品图片 </p>
+                                    <img src="{{item.img}}">
+                                </div> -->
+                        </div>
+                        
+                </div>
+            {{/each}}
+        </script> 
+       </div>
+       
+
+      
+    </div>
+    <!-- 同店推荐 -->
+    <div id="del_recommend" class="del_recommend">
+            <script type="text/html" id="detail_recommend">
+            <p>◊&nbsp;同店推荐 &nbsp;&nbsp;<i>THE SAME SHOP</i></p>
+            <ul>
+                {{each recommend item i}}  
+                   
+                       <li>
+                           <img src="{{item.img}}">
+                           <p>{{item.title}}</p>
+                           <p>￥{{item.price}}</p>
+                       </li>
+                   
+                {{/each}}  
+            </ul>
+            </script>
+    </div>
+    <footer></footer>
+</body>
+</html>

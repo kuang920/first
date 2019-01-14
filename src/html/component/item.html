@@ -6,8 +6,11 @@
             <a href="/html/detail.html?id={{ item.id }}" target="_blank"><img src="{{ item.img }}"></a>
         </div>
         <p class="title">{{ item.title }}</p>
-        <span class="price">{{ item.price }}</span>
-        <span class="e.blue">{{ item.e_blue }}</span>
+        <p>
+            <span class="price">￥{{ item.price }}</span>
+            {{if item.e_blue}}
+            <span class="e.blue">E{{ item.e_blue }}</span></p>
+            {{/if}}
         </li>
         {{/each}}
    </script>

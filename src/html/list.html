@@ -4,14 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>列表页</title>
     <link rel="stylesheet" href="/css/list.css">
     <script src="/libs/require/require.js" data-main="/js/list.js"></script>
 </head>
 <body>
     <header></header>
-    
-    <div id="list-item"></div>
+    <div class="list-nav">
+        <div class="list-nav1">
+            <ul>
+                <li>上架时间</li>
+                <li>销量</li>
+                <li>价格</li>
+            </ul>
+        </div>
+        <div class="list-rule">
+            <p>已选条件:</p>
+            <p>价格：
+                <a href="javascript:;">全部</a>
+                <a href="javascript:;">0-300</a>
+                <a href="javascript:;">300-800</a>
+                <a href="javascript:;">800以上</a>
+            </p>
+            <p>季节：
+                <a href="javascript:;">全部</a>
+                <a href="javascript:;">春夏</a>
+                <a href="javascript:;">秋冬</a>
+            </p>
+        </div>
+    </div>
+    <!-- 列表商品 -->
+    <div class="list-content">
+            <div id="list-item" class="list-item">
+        
+            </div>
+    </div>
+   
     <footer></footer>
 </body>
 </html>

@@ -1,0 +1,111 @@
+@import "./component/style.scss";
+@import "./component/header.scss";
+@import "./component/footer.scss";
+.cart{
+    width: 1100px;
+    margin:0 auto;
+    margin-top:25px;
+    margin-bottom: 480px;
+    .reminder{
+        width: 1100px;
+        height: 40px;
+        border: 1px #ededed solid;
+        background: #cccccc;
+        line-height: 40px;
+        font-size:13px ;
+        padding-left: 30px;
+        margin-bottom: 10px;
+        
+    }
+
+    table{
+        width: 1100px;
+        
+        border-collapse:collapse;
+        thead{
+            tr{
+                th{
+                    border:1px solid #ededed;
+                    background: #f2f2f2;
+                    height: 38px;
+                    text-align: left;
+                    // &:nth-child(1){
+                    //     width: 580px;
+                    // }
+                    // &:nth-child(2){width: 105px;}
+                    // &:nth-child(3){width: 105px;}
+                    // &:nth-child(4){width: 150px;}
+                    // &:nth-child(5){width: 105px;}
+                }
+            }
+        }
+        tbody{
+            border:1px solid #ededed;
+            // height: 118px;
+            color: #444444;
+            font-weight: bold;
+            .red{color: red;}
+            .check{
+                float: left;
+                margin-left: 20px;
+                margin-top:36px; 
+            }
+            .cartImg{
+                width: 62px;
+                height: 88px;
+                float: left;
+                margin: 14px 15px;
+                img{
+                    width: 62px;
+                    height: 88px;
+                    float: left;
+                }
+            }
+            .cartType{
+                // width: 455px;
+                float: left;
+                p{
+                    &:nth-child(1){
+                        margin-top: 17px;
+                        color: #3366cc;
+                    }
+                    &:nth-child(2){
+                        margin-top: 17px;
+                        color: #999999;
+                    }
+                }
+            }
+            .cartNum{
+                display: inline-block;
+                width: 34px;
+                height: 34px;
+                border:1px solid #ededed;
+                margin: 0 4px;
+                line-height: 34px;
+                text-align: center;
+                font-size: 16px;
+                color: #3366cc;
+            }
+            .carMany{
+                width: 40px;
+                height: 34px;
+                display: inline-block;
+                line-height: 34px;
+                text-align: center;
+                border:1px solid #ededed;
+                font-size: 16px;
+                font-weight: normal;
+            }
+            
+        }
+        tfoot{
+            .red{color: red;font-weight: bold;font-size: 14px;}
+        }
+        
+       
+    }
+    
+
+}
+
+

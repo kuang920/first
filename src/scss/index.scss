@@ -8,8 +8,8 @@
     margin-top:15px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 130px;
     ul{
-        width: 9730px;
         height: 409px;
         position: absolute;
         left: 0;
@@ -26,6 +26,28 @@
                vertical-align: top;
                }
         }
+    }
+    ol{
+       width: 174px;
+       height: 18px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       position: absolute;
+       bottom: 20px;
+       left: 50%;
+       margin-left: -87px;
+       li{
+           width: 18px;
+           height: 18px;
+           background: black;
+           border-radius: 50%;
+           opacity: .5;
+           text-align: center;
+           line-height: 18px;
+           color: white;
+           &.ac{background: #ff0000;}
+       }
     }
     
 }
@@ -49,7 +71,20 @@
         margin-top: 20px;
         width: 905px;
         height: 326px;
-        border: 1px solid red;
+        ul{
+            width: 905px;
+            height: 326px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content:space-between;
+            a{
+                display: inline-block;
+                width: 297px;
+                height: 159px;
+                img{vertical-align: top;}
+            }
+        }
     }
     .good-spot{
         width: 1095px;
@@ -72,7 +107,6 @@
     height: 1603px;
     margin: 0 auto;
     margin-top: 98px;
-    border: 1px solid red;
     .hot-title p{
         font-size: 14px;
         width: 300px;
@@ -88,7 +122,27 @@
         width: 945px;
         margin-left: 30px;
         height: 1490px;
-        border: 1px solid red;
+
+        .list-item{
+            ul{
+                width: 945px;
+                height: 1490px;
+                li{
+                    float: left;
+                    margin-right: 8px;
+                    p{
+                        text-align: center;
+                        line-height: 20px;
+                    }
+                    span{
+                        &:nth-child(1){
+                            margin-right: 20px;
+                        }
+                        &:nth-child(2){color: #04b4ae}
+                    }
+                } 
+            }
+        }
     }
     .hot-spot{
         width: 1095px;
@@ -111,7 +165,6 @@
     height: 1593px;
     margin: 0 auto;
     margin-top: 98px;
-    border: 1px solid red;
     .fashionW-title{
         font-size: 14px;
         width: 300px;
@@ -127,7 +180,26 @@
         width: 945px;
         margin-left: 30px;
         height: 1490px;
-        border: 1px solid red;
+        .fashionW-item{
+            ul{
+                width: 945px;
+                height: 1490px;
+                li{
+                    float: left;
+                    margin-right: 8px;
+                    p{
+                        text-align: center;
+                        line-height: 20px;
+                    }
+                    span{
+                        &:nth-child(1){
+                            margin-right: 20px;
+                        }
+                        &:nth-child(2){color: #04b4ae}
+                    }
+                } 
+            }
+        }
     }
     .fashionW-spot{
         width: 1095px;
@@ -150,7 +222,6 @@
     height: 1593px;
     margin: 0 auto;
     margin-top: 98px;
-    border: 1px solid red;
     .man-title{
         font-size: 14px;
         width: 300px;
@@ -166,7 +237,27 @@
         width: 945px;
         margin-left: 30px;
         height: 1490px;
-        border: 1px solid red;
+        .man-item{
+            ul{
+                width: 945px;
+                height: 1490px;
+                li{
+                    float: left;
+                    margin-right: 8px;
+                    p{
+                        text-align: center;
+                        line-height: 20px;
+                    }
+                    span{
+                        &:nth-child(1){
+                            margin-right: 20px;
+                        }
+                        &:nth-child(2){color: #04b4ae}
+                    }
+                } 
+            }
+        }
+
     }
     .man-spot{
         width: 1095px;
@@ -189,7 +280,6 @@
     height: 1594px;
     margin: 0 auto;
     margin-top: 98px;
-    border: 1px solid red;
     .surprise-title{
         font-size: 14px;
         width: 300px;
@@ -205,7 +295,26 @@
         width: 945px;
         margin-left: 30px;
         height: 1489px;
-        border: 1px solid red;
+        .surprise-item{
+            ul{
+                width: 945px;
+                height: 1490px;
+                li{
+                    float: left;
+                    margin-right: 8px;
+                    p{
+                        text-align: center;
+                        line-height: 20px;
+                    }
+                    span{
+                        &:nth-child(1){
+                            margin-right: 20px;
+                        }
+                        &:nth-child(2){color: #04b4ae}
+                    }
+                } 
+            }
+        }
     }
     .surprise-spot{
         width: 1095px;

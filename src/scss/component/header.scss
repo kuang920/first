@@ -1,5 +1,4 @@
 
-$font-size:12px;
 header{
     width: 100%;
     height: 188px;
@@ -34,7 +33,6 @@ header{
                 height: 25px;
                 text-align: center;
                 line-height: 25px;
-                font-size: $font-size;
                 color: white;
             }
         }
@@ -50,7 +48,6 @@ header{
                    height: 26px;
                    border: none;
                    color: #757575;
-                   font-size: $font-size;
                    padding-left: 10px;
                    float: left;
                    background: black;
@@ -61,11 +58,9 @@ header{
                 border: none;
                 background: white;
                 float: left;
-                font-size: $font-size;
                }
             }
             p{
-                font-size: $font-size;
                 a{
                     color: white;
                 }
@@ -77,7 +72,7 @@ header{
 .header-scroll{
     width: 100%;
     height: 68px;
-    background: black;
+    background:black;
     .header-box{
         width: 1095px;
         height: 68px;
@@ -108,7 +103,11 @@ header{
                 color: white;
                 li{ 
                     height: 55px;
-                    line-height: 55px
+                    line-height: 55px;
+                    
+                }
+                a{
+                    color: white;
                 }
                 .now{
                     background: url(/static/img/nav-arr.png) no-repeat center 38px;
@@ -117,19 +116,50 @@ header{
             }
         }
         .scroll-right{
-            width: 136px;
+            width: 400px;
             height: 55px;
-            float: right; 
-            margin-top: 13px;
-            p{  
-                width: 136px;
+            float: right;
+            .yc{display: none;}
+            .right_l{
+                width: 200px;
                 height: 55px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                line-height: 55px;
+                float: left;
                 color: white;
-                a{
+                span:nth-child(2){
+                    line-height: 55px;
+                    margin-right: 20px;
+               }
+             }
+             .right_r{
+                width: 200px;
+                height: 55px;
+                color: white;
+                float: right;
+                
+                .log_reg{
+                    width: 100px;
+                    float: left;
+                   display: flex;
+                   justify-content: space-between;
+                   height: 55px;
+                   line-height: 55px;
+                   
+                   a{
                     color: white;
+                }
+                }
+                .yc{display: none;}
+                .headerCart{
+                    width: 70px;
+                    height: 55px;
+                    margin-left: 30px;
+                    float: left;
+                    line-height: 55px;
+                    a{
+                        color: white;
+                    span{color: red;font-weight: bold;}
+                    }
                 }
             }
     }

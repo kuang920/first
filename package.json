@@ -20,5 +20,14 @@
     "gulp-uglify": "^3.0.1",
     "node-sass": "^4.11.0"
   },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuang920/first.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kuang920/first/issues"
+  },
+  "homepage": "https://github.com/kuang920/first#readme",
   "description": ""
 }

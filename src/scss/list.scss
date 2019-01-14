@@ -2,4 +2,95 @@
 @import "./component/header.scss";
 @import "./component/style.scss";
 
-h1{background: yellow;}
+.list-nav{
+    width: 1095px;
+    height: 260px;
+    margin: 0 auto;
+    .list-nav1{
+        width: 926px;
+        height: 75px;
+        border-bottom: 1px solid #f2f2f2;
+        float: right;
+        ul{
+            width: 220px;
+            height: 35px;
+            margin-top:35px;
+            border: 1px solid #cccccc;
+            float: right;
+            margin-right: 10px;
+            display: flex;
+            justify-content: space-between;
+            li{
+               width: 74px;
+               height: 35px;
+               text-align: center;
+               line-height: 35px;
+               padding-right: 14px;
+               background: url(/static/img/list-arr.png)no-repeat 45px center;
+               &:nth-child(2){
+                   border-left: 1px solid #cccccc;
+                   border-right: 1px solid #cccccc;
+               }
+               &:nth-child(1){
+                   background: url(/static/img/list-arr.png)no-repeat 58px center;
+               }
+            } 
+        }
+    }
+    .list-rule{
+        width: 926px;
+        height: 140px;
+        margin-top: 22px;
+        border-top: 2px solid #cccccc;
+        float: right;
+        p{
+            height: 46px;
+            border-bottom: 1px solid #cccccc;
+            line-height: 46px;
+            color: #444444;
+            font-weight: bold;
+            padding-left: 68px;
+            border-left: 1px solid #cccccc;
+            &:nth-child(1){
+                background: #f2f2f2;
+                padding-left: 37px;
+            }
+            a{
+                color: #444444;
+                font-weight: normal;
+                margin-right: 17px;
+            }
+        }
+    }
+}
+
+
+// 列表商品
+.list-content{
+    width: 1095px;
+    height: 2632px;
+    margin: 0 auto;
+    .list-item{
+        width: 690px;
+        height: 2563px;
+        margin-left: 334px;
+        ul{
+            width: 690px;
+            height: 2563px;
+            li{
+                float: left;
+               margin-right: 8px;
+                p{
+                    text-align: center;
+                    line-height: 20px;
+                }
+                span{
+                    &:nth-child(1){
+                        margin-right: 20px;
+                    }
+                    &:nth-child(2){color: #04b4ae}
+                }
+            } 
+        }
+    }
+}

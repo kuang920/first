@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="/css/cart.css">
+	<script src="/libs/require/require.js" data-main="/js/cart.js"></script>
+</head>
+<body>
+    <!-- header -->
+	<header></header>
+	<div class="cart" id="cart">
+		<div class="reminder">商品请在一周内提交订单，否则系统将其自动移出购物车。</div>
+        <table>
+				<thead>
+					<tr>
+						<th><label>全选：<input type="checkbox" id="allCheck"/></label>商品信息</th>
+						<th>价格</th>
+						<th>数量</th>
+						<th>小计</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					
+					<!-- <tr>
+						<td>
+							<input type="checkbox" class="check"/>
+							<div class="cartImg"><img src=""></div>
+							<div class="cartType">
+								<p>title</p>
+								<p><span class="cartColor">颜色：</span>&nbsp;&nbsp;<span class="cartSize">尺寸：</span></p>
+							</div>
+						</td>
+						<td><span>￥price</span></td>
+						<td><span class="cartReduce cartNum">-</span><span class="carMany">1</span><span class="cartAdd cartNum">+</span></td>
+						<td><span class="manythis">￥price</span></td>
+						<td>
+							<a href="javascript:;" class="delBtn">删除</a>
+						</td>
+			
+					</tr> -->
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3"><span class="cleanCart"></span></td>
+						<td colspan="2">已选商品<span class="inAdd red" id="inAdd"></span>款&nbsp;&nbsp;商品总价：￥<span class="cartMoney red" id="cartMoney"></span></td>
+						<td><span class="cartGo">立即结算</span></td>
+					</tr>
+				</tfoot>
+		   </table>
+    </div>
+    <!-- footer -->
+	<footer></footer>
+</body>
+</html>
