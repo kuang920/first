@@ -31,7 +31,7 @@ require(["./requirejs.config"],()=>{
 																<p><span class="cartColor">颜色：${element.color}</span>&nbsp;&nbsp;<span class="cartSize">尺寸：${element.size}</span></p>
 															</div>
 														</td>
-														<td><span>￥${element.price}</span></td>
+														<td>￥<span class="price">${element.price}</span></td>
 														<td><span class="cartReduce cartNum">-</span><span class="carMany">${element.num}</span><span class="cartAdd cartNum">+</span></td>
 														<td>￥<span class="manythis red">${allPric}</span></td>
 														<td>
@@ -50,7 +50,7 @@ require(["./requirejs.config"],()=>{
 							}	
 							cart();
 
-							let n = 0;//记录单选按钮被选中的数量
+							var n = 0;//记录单选按钮被选中的数量
 							// console.log(num);
 							//点击减数量按钮绑定事件
 							cartBox.on("click",".cartReduce",function(event){
@@ -65,7 +65,7 @@ require(["./requirejs.config"],()=>{
 								}
 								
 							cartNumChange(num,thisTr);
-							
+							calcPrice();
 								
 							})
 							//点击加数量按钮
@@ -85,7 +85,6 @@ require(["./requirejs.config"],()=>{
 								const $src = $(event.target);
 								let thisTr = $(this).parents("tr");//找到当前行
 								// console.log($(".delBtn").parents("tr"));
-								
 								//找到这一条的data-id属性值
 								let data_id = thisTr.attr("data-id");
 								// console.log(data_id);
@@ -98,13 +97,15 @@ require(["./requirejs.config"],()=>{
 									
 								})
 								//判断这行是否被选中  选中了就n--
-								// if(thisTr.find(".check")[0].checked)n--;
-								// $("#allCheck").checked = (n===$(".check").length);
+								if(thisTr.find(".check")[0].checked)n--;
+								
 								//把新数组存入cookie
 								// $.cookie("cart",JSON.stringify(arrCart),{expires:-1,path:"/"});
 								$.cookie("cart",JSON.stringify(arrCart),{expires:3,path:"/"})
 								thisTr.remove();
-								cart();
+								// cart();
+								calcPrice();
+								
 							})
 
 							//点击全选按钮
@@ -139,40 +140,42 @@ require(["./requirejs.config"],()=>{
 									// console.log(arrCart2);
 								})
 								$.cookie("cart",JSON.stringify(arrCart2),{expires:3,path:"/"})
-								cart();
+								// cart();
 							}
                             //计算总价格
 							function calcPrice(){
 								let sum = 0;
 								//找到被选中的那些行，然后把这些行的总价，累加
 								let aTr = $(".check").parents("tr");
-								for(let j =0; j < aTr.length; j++){
-									let allPric = $(".manythis").eq(j).text();
-									let	price = Number(allPric);
-									if(aTr.eq(j).find(".check")[0].checked){
-										sum += price;
-									 	n++;
+								// console.log(1,price);
 
-									}else{
-										sum = 0;
+								for(let j =0; j < aTr.length; j++){
+									let price = Number(aTr.eq(j).find(".price").text());
+									let Ninput = Number(aTr.eq(j).find(".carMany").text());
+									let	allPrics = price*Ninput
+									console.log(aTr)
+									if(aTr.eq(j).find(".check")[0].checked){
+										aTr.eq(j).find(".manythis").text(allPrics.toFixed(2));
+										sum+=allPrics;
 									}
+
 								}
 								if(n === aTr.length){
                                    $("#allCheck").get(0).checked;
 								}
-								$("#cartMoney").html(sum);
+								$("#cartMoney").html(sum.toFixed(2));
 							}
 							//点击复选框
-							cartBox.on("click",".check",function(event){
-                                let sum=0;
+							cartBox.on("click",".check",(event)=>{
+								let sum=0;
+								
 								$(".check:checked").each((index,element)=>{
-									sum+=Number($(element).parents("tr").find(".manythis").text());
-									n++;
+									sum += Number($(element).parents("tr").find(".manythis").text());
 								})
 								$("#cartMoney").text(sum.toFixed(2));
+								n = $(".check:checked").length;
+								$("#allCheck").get(0).checked = (n===$(".check").length);
 							})
-
-							
 						}
 				})
 		})

@@ -23,7 +23,7 @@ gulp.task("html",() => {
 gulp.task("js", () => {
 	gulp.src("src/js/**/*.js")
 		.pipe(babel({
-			presets: ['@babel/env']
+			presets: ['env']
 		}))
 		.pipe(uglify())
 		.pipe(gulp.dest("dist/js"))
