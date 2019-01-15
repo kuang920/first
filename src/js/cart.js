@@ -98,7 +98,7 @@ require(["./requirejs.config"],()=>{
 								})
 								//判断这行是否被选中  选中了就n--
 								if(thisTr.find(".check")[0].checked)n--;
-								
+								//git push
 								//把新数组存入cookie
 								// $.cookie("cart",JSON.stringify(arrCart),{expires:-1,path:"/"});
 								$.cookie("cart",JSON.stringify(arrCart),{expires:3,path:"/"})
